@@ -9,9 +9,4 @@ router.post('/', function(req, res){
     res.send('Post route Called');
 });
 
-//URL Binding
-router.get('/:name', function(req, res){
-    res.send('Get request called by ' + req.params.name);
-})
-
 module.exports = router;
