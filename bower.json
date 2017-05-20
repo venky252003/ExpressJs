@@ -1,13 +1,10 @@
 {
   "name": "library",
-  "description": "bower library",
-  "main": "index.js",
+  "version": "0.0.0",
   "authors": [
-    "venky252003 <venky25@gmail.com>"
+    "Venky25"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/venky252003/ExpressJs",
-  "private": true,
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,7 +13,23 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1",
-    "bootstrap": "^3.3.7"
-  }
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/js/bootstrap.js",
+                "dist/css/bootstrap.css",
+                "less/bootstrap.less"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "less/font-awesome.less",
+                "css/font-awesome.min.css",
+                "scss/font-awesome.scss"
+            ]
+        }
+    }
 }
